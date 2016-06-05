@@ -1,0 +1,18 @@
+<!doctype html>
+<html ng-app="modalApp">
+  <head>
+    <title>Modals with Angular and Ui-Router</title>
+    <link rel="stylesheet" href="css/app.css" />
+    <script type="text/javascript" src="js/lib/angular.min.js"></script>
+    <script type="text/javascript" src="js/lib/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </head>
+  <body>
+    <h3>Pusheen Hoodie</h3>
+    <p>Now you too can look like Pusheen!</p>
+    <button ui-sref="Modal.confirmAddToCart">Add to cart</button>
+
+    <div ui-view="modal" autoscroll="false"></div>
+  </body>
+</html>
